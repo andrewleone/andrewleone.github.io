@@ -1,0 +1,164 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0130A4;
+    font-size:xx-large;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+@keyframes  fadeIn {
+    0% {
+        opacity: 0; /* Inicialmente, o texto está totalmente transparente */
+    }
+    100% {
+        opacity: 1; /* No final, o texto está totalmente visível */
+    }
+}
+
+.animado {
+    animation-name: fadeIn; /* Nome da animação */
+    animation-duration: 5s; /* Duração da animação (2 segundos) */
+    animation-timing-function: ease; /* Função de temporização da animação (opcional) */
+    animation-iteration-count: 1; /* Número de repetições (neste caso, 1 vez) */
+}
+
+.myclass{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Conteúdo principal*/
+.news-container {
+    display: flex;
+    margin: 1rem 0;
+    gap: 5rem;
+    justify-content: center;
+    color: #004A8D;
+}
+
+
+.news-item {
+    border: 1px solid #000;
+    margin: 1.5rem 0;
+    box-shadow: rgba(0, 0, 0, 0.34) 4px 6px 8px;
+    padding: 1rem;
+    width: 965px;
+    height: 500px;
+    display:flex;
+    flex-direction:column;
+    gap: 1rem;
+    background-color: #E5EAF6;
+    border-radius: 20px;
+    color: #004A8D;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    transition: transform 0.3s;
+}
+
+.news-item:hover {
+    transform: scale(1.05); /* Aumenta o tamanho em 20% quando o mouse está sobre a caixa */
+}
+
+.leiamais{
+    color: #F7941D; /* Cor padrão para links não visitados */
+    text-decoration: none; /* Remove sublinhado padrão */
+}
+
+.news-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/*Rodapé*/
+footer {
+    padding: 2rem;
+    background-color: #F7941D;
+    text-align: center;
+    color: #fff;
+}
+
+.second{
+    font-size:xx-large;
+    color: #004A8D;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+    margin-top: 50px; /* Espaçamento entre a última notícia e o conteúdo adicional */
+}
+
+.conteudo-adicional {
+    top: 0; /* Define a posição de início */
+    background-color: #f0f0f0; /* Um fundo de cor diferente para destacá-lo */
+    padding: 20px;
+    margin-top: 20px; /* Espaçamento entre a última notícia e o conteúdo adicional */   
+}
+
+.meu-video {
+    width: 1000px; /* Largura desejada em pixels */
+    height: 450px; /* Altura desejada em pixels */
+    border-radius: 20px;
+    border: 1px solid #000;
+    box-shadow: rgba(0, 0, 0, 0.34) 4px 6px 8px;
+}
+
+/*background-color: #0130A4;
+    font-size:xx-large;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;*/
+
+.third{
+    font-size:xx-large;
+    color: #004A8D;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.text_third{
+    border: 1px solid #000;
+    margin: 1.5rem 0;
+    box-shadow: rgba(0, 0, 0, 0.34) 4px 6px 8px;
+    padding: 1rem;
+    width: 965px;
+    height: 100px;
+    display:flex;
+    flex-direction:column;
+    gap: 1rem;
+    background-color: #E5EAF6;
+    border-radius: 20px;
+    color: #004A8D;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:normal;
+    margin-top: 1px;
+}
